@@ -25,7 +25,7 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Structured data -->
 <script type="application/ld+json">
@@ -63,7 +63,7 @@
 /* =========================================================================
    CUSTOM CAR AUDIO AND POWERSPORTS — "Subwoofer Glow" night treatment
    Matte-black canvas + living amber/violet aurora + film grain.
-   Display: Sixtyfour Convergence (retro-LED)  ·  Body/UI: Noto Serif Oriya
+   Display: Anton (condensed impact + gradient wordmark)  ·  Body/UI: Figtree
    All motion transform/opacity (+ one-shot blur reveals), reduced-motion gated.
    ========================================================================= */
 :root{
@@ -108,7 +108,7 @@ body{
   margin:0;
   background:var(--ink);
   color:var(--paper-dim);
-  font-family:"Noto Serif Oriya",Georgia,"Times New Roman",serif;
+  font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
@@ -124,16 +124,16 @@ p{margin:0;overflow-wrap:break-word}
 }
 
 h1,h2,h3,h4{
-  font-family:"Sixtyfour Convergence","Sixtyfour",system-ui,sans-serif;
-  line-height:1.34;
+  font-family:"Anton",system-ui,sans-serif;
+  line-height:1.12;
   margin:0;
   font-weight:400;
   color:var(--paper);
   overflow-wrap:break-word;
-  letter-spacing:.005em;
+  letter-spacing:.01em;
 }
-h2{font-size:clamp(1.5rem,3.4vw,2.5rem);text-wrap:balance}
-h3{font-size:1.05rem;line-height:1.4}
+h2{font-size:clamp(1.55rem,3.5vw,2.6rem);text-wrap:balance;line-height:1.08}
+h3{font-size:1.12rem;line-height:1.2;letter-spacing:.015em}
 
 .wrap{max-width:var(--maxw);margin:0 auto;padding-left:clamp(20px,5vw,44px);padding-right:clamp(20px,5vw,44px)}
 section{position:relative;padding-top:clamp(66px,9vw,120px);padding-bottom:clamp(66px,9vw,120px)}
@@ -230,10 +230,10 @@ section{position:relative;padding-top:clamp(66px,9vw,120px);padding-bottom:clamp
 /* ---------- eyebrow ---------- */
 .eyebrow{
   display:inline-flex;align-items:center;gap:11px;
-  font-family:"Sixtyfour Convergence","Sixtyfour",sans-serif;
+  font-family:"Anton",sans-serif;
   text-transform:uppercase;
-  letter-spacing:.06em;
-  font-size:.62rem;
+  letter-spacing:.16em;
+  font-size:.72rem;
   color:var(--amber-bright);
   margin:0 0 18px;
   line-height:1.5;
@@ -249,7 +249,7 @@ section{position:relative;padding-top:clamp(66px,9vw,120px);padding-bottom:clamp
 .btn{
   position:relative;
   display:inline-flex;align-items:center;gap:.6em;
-  font-family:"Noto Serif Oriya",serif;font-weight:700;font-size:1rem;
+  font-family:"Figtree",system-ui,sans-serif;font-weight:700;font-size:1rem;
   padding:15px 26px;border-radius:13px;
   text-decoration:none;cursor:pointer;border:1px solid transparent;
   transition:transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
@@ -338,8 +338,13 @@ header.site.is-scrolled{
 }
 .brand .mark svg{width:26px;height:26px;filter:drop-shadow(0 0 6px rgba(255,158,44,.5))}
 .brand .bt{min-width:0}
-.brand b{font-family:"Sixtyfour Convergence","Sixtyfour",sans-serif;font-weight:400;font-size:.82rem;color:var(--paper);letter-spacing:.01em;line-height:1.35;display:block}
-.brand span.tag{display:flex;align-items:center;gap:6px;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-soft);font-weight:700;margin-top:5px;white-space:nowrap;font-family:"Noto Serif Oriya",serif}
+.brand b{
+  font-family:"Anton",sans-serif;font-weight:400;font-size:1rem;line-height:1.06;display:block;
+  text-transform:uppercase;letter-spacing:.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 14px rgba(255,158,44,.28));
+}
+.brand span.tag{display:flex;align-items:center;gap:6px;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-soft);font-weight:700;margin-top:5px;white-space:nowrap;font-family:"Figtree",system-ui,sans-serif}
 .nav-right{display:flex;align-items:center;gap:14px;flex:none;margin-left:auto}
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a.link{text-decoration:none;font-weight:400;color:rgba(244,242,239,.82);font-size:.93rem;transition:color .18s ease}
@@ -360,7 +365,7 @@ header.site.is-scrolled{
   display:inline-flex;align-items:center;gap:9px;text-decoration:none;
   background:linear-gradient(115deg,var(--amber-deep) 0%,var(--amber) 42%,var(--amber-bright) 70%,var(--violet) 108%);
   background-size:220% 100%;
-  color:#2a1704;font-weight:700;font-family:"Noto Serif Oriya",serif;
+  color:#2a1704;font-weight:700;font-family:"Figtree",system-ui,sans-serif;
   padding:11px 17px;border-radius:11px;font-size:.92rem;white-space:nowrap;flex:none;overflow:hidden;
   transition:transform .18s ease,box-shadow .18s ease,background-position .3s ease;line-height:1.1;
   box-shadow:0 8px 24px rgba(224,122,18,.45), inset 0 1px 0 rgba(255,255,255,.35);
@@ -420,7 +425,7 @@ header.site.is-scrolled{
   position:absolute;
   left:0;right:0;bottom:-.06em;
   z-index:-1;
-  font-family:"Sixtyfour Convergence","Sixtyfour",sans-serif;
+  font-family:"Anton",sans-serif;
   font-size:clamp(56px,12vw,168px);
   line-height:1;
   letter-spacing:.02em;
@@ -453,7 +458,7 @@ header.site.is-scrolled{
   -webkit-backdrop-filter:blur(8px);
   backdrop-filter:blur(8px);
   color:var(--amber-soft);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
-  padding:8px 16px;border-radius:999px;font-family:"Noto Serif Oriya",serif;
+  padding:8px 16px;border-radius:999px;font-family:"Figtree",system-ui,sans-serif;
   box-shadow:0 0 24px rgba(255,158,44,.12), inset 0 1px 0 rgba(255,255,255,.08);
 }
 .badge .stars{display:inline-flex;gap:2px;color:var(--amber-bright)}
@@ -473,7 +478,7 @@ header.site.is-scrolled{
   color:transparent;
   filter:drop-shadow(0 0 26px rgba(255,158,44,.32));
 }
-.hero p.sub{font-family:"Noto Serif Oriya",serif;font-size:clamp(1.05rem,2.1vw,1.24rem);margin-top:28px;max-width:60ch;color:rgba(236,233,226,.9);font-weight:400;line-height:1.66}
+.hero p.sub{font-family:"Figtree",system-ui,sans-serif;font-size:clamp(1.05rem,2.1vw,1.24rem);margin-top:28px;max-width:60ch;color:rgba(236,233,226,.9);font-weight:400;line-height:1.66}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
 .hero-note{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin-top:34px;font-size:.93rem;color:rgba(236,233,226,.85)}
 .hero-note .pc{display:inline-flex;align-items:center;gap:9px}
@@ -502,13 +507,13 @@ header.site.is-scrolled{
 .stat-item:hover{background:rgba(255,170,60,.07);box-shadow:inset 0 0 34px rgba(255,158,44,.08)}
 .stat-item svg{width:27px;height:27px;flex:none;color:var(--amber-bright);filter:drop-shadow(0 0 8px rgba(255,158,44,.5))}
 .stat-item b{
-  display:block;font-family:"Sixtyfour Convergence","Sixtyfour",sans-serif;font-size:1rem;font-weight:400;line-height:1.25;
+  display:block;font-family:"Anton",sans-serif;font-size:1rem;font-weight:400;line-height:1.25;
   background:var(--grad);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
 }
-.stat-item small{display:block;color:var(--paper-dim);font-size:.8rem;margin-top:5px;font-family:"Noto Serif Oriya",serif}
+.stat-item small{display:block;color:var(--paper-dim);font-size:.8rem;margin-top:5px;font-family:"Figtree",system-ui,sans-serif}
 @media(max-width:760px){.stat-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:400px){.stat-grid{grid-template-columns:1fr}}
 
@@ -548,7 +553,7 @@ header.site.is-scrolled{
 .feat-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(34px,6vw,72px);align-items:center}
 .feat-grid>*{min-width:0}
 .feat-grid.flip .feat-media{order:-1}
-.feat-copy .lead{color:var(--paper);margin-top:20px;font-size:1.12rem;font-weight:400;line-height:1.66;font-family:"Noto Serif Oriya",serif}
+.feat-copy .lead{color:var(--paper);margin-top:20px;font-size:1.12rem;font-weight:400;line-height:1.66;font-family:"Figtree",system-ui,sans-serif}
 .feat-copy p.body{color:var(--paper-dim);margin-top:15px;font-size:1.03rem}
 .feat-list{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:13px}
 .feat-list li{display:flex;gap:13px;align-items:flex-start;min-width:0}
@@ -580,13 +585,13 @@ header.site.is-scrolled{
 }
 .feat-media .float svg{width:29px;height:29px;flex:none;color:var(--amber-bright);filter:drop-shadow(0 0 8px rgba(255,158,44,.5))}
 .feat-media .float b{
-  font-family:"Sixtyfour Convergence","Sixtyfour",sans-serif;font-weight:400;font-size:.8rem;line-height:1.3;display:block;
+  font-family:"Anton",sans-serif;font-weight:400;font-size:.8rem;line-height:1.3;display:block;
   background:var(--grad);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
 }
-.feat-media .float small{color:var(--paper-dim);font-size:.8rem;line-height:1.3;display:block;margin-top:5px;font-family:"Noto Serif Oriya",serif}
+.feat-media .float small{color:var(--paper-dim);font-size:.8rem;line-height:1.3;display:block;margin-top:5px;font-family:"Figtree",system-ui,sans-serif}
 .feat-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:13px}
 @media(max-width:860px){
   .feat-grid{grid-template-columns:1fr}
@@ -632,7 +637,7 @@ header.site.is-scrolled{
 }
 .divider .star{width:40px;height:40px;color:var(--amber-bright);margin:0 auto 22px;filter:drop-shadow(0 0 14px rgba(255,158,44,.6))}
 .divider blockquote{
-  font-family:"Noto Serif Oriya",serif;font-weight:600;color:var(--paper);margin:0 auto;
+  font-family:"Figtree",system-ui,sans-serif;font-weight:600;color:var(--paper);margin:0 auto;
   font-size:clamp(1.3rem,3.4vw,2.15rem);line-height:1.5;max-width:26ch;
   text-wrap:balance;
 }
@@ -666,7 +671,7 @@ header.site.is-scrolled{
 .rev .who{margin-top:18px;display:flex;align-items:center;gap:12px}
 .rev .av{
   width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;
-  font-family:"Sixtyfour Convergence","Sixtyfour",sans-serif;font-size:.7rem;color:#20130a;
+  font-family:"Anton",sans-serif;font-size:.7rem;color:#20130a;
   background:var(--grad);
   box-shadow:0 0 14px rgba(255,158,44,.25);
 }
@@ -694,7 +699,7 @@ header.site.is-scrolled{
   box-shadow:inset 0 1px 0 rgba(255,255,255,.05), var(--shadow-md);
 }
 .hours-card h3{color:var(--paper);font-size:.86rem;margin-bottom:18px}
-.hours{list-style:none;margin:0;padding:0;display:grid;gap:2px;font-family:"Noto Serif Oriya",serif}
+.hours{list-style:none;margin:0;padding:0;display:grid;gap:2px;font-family:"Figtree",system-ui,sans-serif}
 .hours li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--line-soft);font-size:.95rem}
 .hours li:last-child{border-bottom:none}
 .hours li span:first-child{color:var(--paper-dim)}
@@ -747,7 +752,7 @@ footer.site::before{
 .foot-brand .brand b{color:var(--paper)}
 .foot-brand p.desc{margin-top:18px;max-width:42ch;font-size:.92rem;color:var(--paper-dim)}
 .foot-contact{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
-footer.site h4{font-family:"Noto Serif Oriya",serif;text-transform:uppercase;letter-spacing:.14em;font-size:.73rem;color:var(--amber-soft);margin:0 0 15px;font-weight:700}
+footer.site h4{font-family:"Figtree",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.73rem;color:var(--amber-soft);margin:0 0 15px;font-weight:700}
 footer.site a{color:rgba(236,233,226,.84);text-decoration:none}
 footer.site a:hover{color:var(--amber-bright)}
 .foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:11px;font-size:.93rem}
